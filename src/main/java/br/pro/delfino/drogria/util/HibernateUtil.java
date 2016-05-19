@@ -15,9 +15,9 @@ public class HibernateUtil {
 	private static SessionFactory criarFabricaDesessaoes() {
 		try {
 			Configuration configuracao = new Configuration().configure();
-			ServiceRegistry registro= new StandardServiceRegistryBuilder().applySettings(configuracao.getProperties()).build();
+			//ServiceRegistry registro= new StandardServiceRegistryBuilder().applySettings(configuracao.getProperties()).build();
 			
-			SessionFactory fabrica = configuracao.buildSessionFactory(registro);
+			SessionFactory fabrica = configuracao.buildSessionFactory();
 			return fabrica;
 
 		} catch (Throwable ex) {

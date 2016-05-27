@@ -10,7 +10,6 @@ import br.pro.delfino.drogria.domain.Estado;
 
 public class CidadeDAOTest {
 	@Test
-	@Ignore
 	public void salvar() {
 		Long codigoEstado = 1L;
 		
